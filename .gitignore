@@ -1,0 +1,20 @@
+# CLion project files
+.idea/
+*.iml
+*.iws
+
+# Build artifacts
+cmake-build-*/
+*.so
+*.o
+*.a
+*.exe
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+
+# EAP build artifacts
+idea-*/
