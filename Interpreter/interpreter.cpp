@@ -1,6 +1,7 @@
+#include <iostream>
 #include "interpreter.h"
 
-int validate(const std::string& code, int printWarnings) {
+int validate(const std::string &code, int printWarnings) {
     int pointer = 0;
     int bracketCounter = 0;
 
@@ -85,10 +86,10 @@ int interpret(const std::string &code, int printWarnings) {
                 (*pointer)--;
                 break;
             case '.':
-                printf("%c", *pointer);
+                std::cout << *pointer;
                 break;
             case ',':
-                scanf("%c", pointer);
+                std::cin >> *pointer;
                 break;
             case '[':
                 bracketCounter++;
